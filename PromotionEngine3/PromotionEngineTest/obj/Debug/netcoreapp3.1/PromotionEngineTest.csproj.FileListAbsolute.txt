@@ -92,3 +92,6 @@ C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngineT
 C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngineTest\obj\Debug\netcoreapp3.1\PromotionEngineTest.dll
 C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngineTest\obj\Debug\netcoreapp3.1\PromotionEngineTest.pdb
 C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngineTest\obj\Debug\netcoreapp3.1\PromotionEngineTest.genruntimeconfig.cache
+C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngineTest\bin\Debug\netcoreapp3.1\PromotionEngine3.exe
+C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngineTest\bin\Debug\netcoreapp3.1\PromotionEngine3.dll
+C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngineTest\bin\Debug\netcoreapp3.1\PromotionEngine3.pdb
