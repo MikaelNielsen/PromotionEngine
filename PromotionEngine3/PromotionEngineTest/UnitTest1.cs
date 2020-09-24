@@ -1,12 +1,24 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+// Testing the PromotionEngine3 project
 namespace PromotionEngineTest
 {
     [TestClass]
-    public class UnitTest1
+    public class PromotionEngineTest
     {
+        // test Scenario A
         [TestMethod]
-        public void TestMethod1()
+        public void ScenarioA()
+        {
+        }
+        // test Scenario B
+        [TestMethod]
+        public void ScenarioB()
+        {
+        }
+        // test Scenario C
+        [TestMethod]
+        public void ScenarioC()
         {
         }
     }

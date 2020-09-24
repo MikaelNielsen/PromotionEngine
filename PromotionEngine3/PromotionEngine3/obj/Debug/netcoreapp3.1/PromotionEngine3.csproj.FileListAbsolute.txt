@@ -1,0 +1,12 @@
+C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngine3\bin\Debug\netcoreapp3.1\PromotionEngine3.exe
+C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngine3\bin\Debug\netcoreapp3.1\PromotionEngine3.deps.json
+C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngine3\bin\Debug\netcoreapp3.1\PromotionEngine3.runtimeconfig.json
+C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngine3\bin\Debug\netcoreapp3.1\PromotionEngine3.runtimeconfig.dev.json
+C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngine3\bin\Debug\netcoreapp3.1\PromotionEngine3.dll
+C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngine3\bin\Debug\netcoreapp3.1\PromotionEngine3.pdb
+C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngine3\obj\Debug\netcoreapp3.1\PromotionEngine3.AssemblyInfoInputs.cache
+C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngine3\obj\Debug\netcoreapp3.1\PromotionEngine3.AssemblyInfo.cs
+C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngine3\obj\Debug\netcoreapp3.1\PromotionEngine3.csproj.CoreCompileInputs.cache
+C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngine3\obj\Debug\netcoreapp3.1\PromotionEngine3.dll
+C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngine3\obj\Debug\netcoreapp3.1\PromotionEngine3.pdb
+C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngine3\obj\Debug\netcoreapp3.1\PromotionEngine3.genruntimeconfig.cache
