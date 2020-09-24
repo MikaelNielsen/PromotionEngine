@@ -39,24 +39,37 @@ namespace PromotionEngineTest
             var scen = new Scenario(promotions);
             return scen;
         }
+
         // test Scenario A
         [TestMethod]
         public void ScenarioA()
         {
             var scen = BuildScenario();
-            var units = new List<UnitCount> { new UnitCount(1, 'A', Price.A), new UnitCount(1, 'B', Price.B), new UnitCount(1, 'C', Price.C) };
+            var units = new List<UnitCount> 
+            { 
+                new UnitCount(1, 'A', Price.A), 
+                new UnitCount(1, 'B', Price.B), 
+                new UnitCount(1, 'C', Price.C) 
+            };
             var price = scen.CalcBestPrice(units);
             Debug.Assert(price == Price.A + Price.B + Price.C);
         }
+
         // test Scenario B
         [TestMethod]
         public void ScenarioB()
         {
             var scen = BuildScenario();
-            var units = new List<UnitCount> { new UnitCount(5, 'A', Price.A), new UnitCount(5, 'B', Price.B), new UnitCount(1, 'C', Price.C) };
+            var units = new List<UnitCount> 
+            { 
+                new UnitCount(5, 'A', Price.A), 
+                new UnitCount(5, 'B', Price.B), 
+                new UnitCount(1, 'C', Price.C) 
+            };
             var price = scen.CalcBestPrice(units);
             Debug.Assert(price == Price.AAA + 2 * Price.A + 2 * Price.BB + Price.B + Price.C);
         }
+
         // test Scenario C
         [TestMethod]
         public void ScenarioC()
