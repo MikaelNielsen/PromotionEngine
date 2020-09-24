@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace PromotionEngine3
 {
@@ -40,7 +41,7 @@ namespace PromotionEngine3
                     continue;
 
                 unit.Count -= multi * Count;
-                units.RemoveAll(u => u.Count == 0);
+                units.RemoveAll(u => u.Count == 0); // can't have zero items
                 return multi * Value;
             }
             return 0;
@@ -58,6 +59,25 @@ namespace PromotionEngine3
             Sku1 = sku1;
             Sku2 = sku2;
             Value = value;
+        }
+
+        // find sku1 and sku2 in units, remove max count, return value
+        public override int ExtractValue(List<UnitCount> units)
+        {
+            var u1 = units.Find(u => u.Sku == Sku1);
+            if (u1 == null)
+                return 0;
+
+            var u2 = units.Find(u => u.Sku == Sku2);
+            if (u2 == null)
+                return 0;
+
+            var multi = Math.Min(u1.Count, u2.Count);
+            Debug.Assert(multi > 0);
+            u1.Count -= multi;
+            u2.Count -= multi;
+            units.RemoveAll(u => u.Count == 0); // can't have zero items
+            return multi * Value;
         }
     }
 
