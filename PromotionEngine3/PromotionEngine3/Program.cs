@@ -26,6 +26,25 @@ namespace PromotionEngine3
             Sku = sku;
             Value = value;
         }
+
+        // find a unit with the correct sku and remove max number of units. Return value
+        public override int ExtractValue(List<UnitCount> units)
+        {
+            foreach (var unit in units)
+            {
+                if (unit.Sku != Sku)
+                    continue;
+
+                var multi = unit.Count / Count;
+                if (multi == 0)
+                    continue;
+
+                unit.Count -= multi * Count;
+                units.RemoveAll(u => u.Count == 0);
+                return multi * Value;
+            }
+            return 0;
+        }
     }
 
     // promotion involving 2 SKUs
@@ -68,9 +87,34 @@ namespace PromotionEngine3
         }
 
         // calculate price for units using promotions
-        public int CalcBestPrice(List<UnitCount> units)
+
+        public int CalcBestPrice(List<UnitCount> orgUnits)
         {
-            return 0;
+
+            var units = new List<UnitCount>(); // this algoritm destroys the units counted - operate on copy
+            units.AddRange(orgUnits);
+            var cost = 0;
+            for (; ; )
+            {
+                var value = FindPromotion(units);
+                if (value == 0)
+                    break;
+                cost += value;
+            }
+
+            foreach (var unit in units)
+                cost += unit.Count * unit.Value;
+
+            return cost;
+        }
+
+        // ask each promotion to apply ExtractValue() to units
+        private int FindPromotion(List<UnitCount> units)
+        {
+            var value = 0;
+            foreach (var prom in Promotions)
+                value += prom.ExtractValue(units);
+            return value;
         }
     }
 

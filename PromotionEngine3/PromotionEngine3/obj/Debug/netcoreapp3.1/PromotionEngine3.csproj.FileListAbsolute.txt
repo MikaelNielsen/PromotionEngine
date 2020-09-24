@@ -10,3 +10,4 @@ C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngine3
 C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngine3\obj\Debug\netcoreapp3.1\PromotionEngine3.dll
 C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngine3\obj\Debug\netcoreapp3.1\PromotionEngine3.pdb
 C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngine3\obj\Debug\netcoreapp3.1\PromotionEngine3.genruntimeconfig.cache
+C:\Users\45224\source\repos\PromotionEngineGit\PromotionEngine3\PromotionEngine3\obj\Debug\netcoreapp3.1\PromotionEngine3.csprojAssemblyReference.cache
