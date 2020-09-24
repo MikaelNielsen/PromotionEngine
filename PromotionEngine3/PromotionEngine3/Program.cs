@@ -58,12 +58,16 @@ namespace PromotionEngine3
     // A checkout process scenario with a list of promotions
     public class Scenario
     {
+        // promotions available in this scenario
         public List<Promotion> Promotions = new List<Promotion>();
+        
+        // create a scenario with promotions
         public Scenario(List<Promotion> promotions)
         {
             Promotions.AddRange(promotions);
         }
 
+        // calculate price for units using promotions
         public int CalcBestPrice(List<UnitCount> units)
         {
             return 0;
